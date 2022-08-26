@@ -228,16 +228,16 @@ async function loadInfo() {
   } else if (chain === 'polygon') {
     priceType = 'MATIC';
   }
-  const price = web3.utils.fromWei(info.deploymentConfig.mintPrice, 'ether');
+  const price = web3.utils.fromWei(info.runtimeConfig.mintPrice, 'ether');
   const pricePerMint = document.getElementById("pricePerMint");
   const maxPerMint = document.getElementById("maxPerMint");
   const totalSupply = document.getElementById("totalSupply");
   const mintInput = document.getElementById("mintInput");
   
   pricePerMint.innerText = `${price} ${priceType}`;
-  maxPerMint.innerText = `${info.deploymentConfig.tokensPerMint}`;
-  totalSupply.innerText = `${info.deploymentConfig.maxSupply}`;
-  mintInput.setAttribute("max", info.deploymentConfig.tokensPerMint);
+  maxPerMint.innerText = `${info.runtimeConfig.tokensPerMint}`;
+  totalSupply.innerText = `${info.runtimeConfig.maxSupply}`;
+  mintInput.setAttribute("max", info.runtimeConfig.tokensPerMint);
 
   // MINT INPUT
   const mintIncrement = document.getElementById("mintIncrement");
@@ -279,13 +279,13 @@ function setTotalPrice() {
   const mintInputValue = parseInt(mintInput.value);
   const totalPrice = document.getElementById("totalPrice");
   const mintButton = document.getElementById("mintButton");
-  if(mintInputValue < 1 || mintInputValue > info.deploymentConfig.tokensPerMint) {
+  if(mintInputValue < 1 || mintInputValue > info.runtimeConfig.tokensPerMint) {
     totalPrice.innerText = 'INVALID QUANTITY';
     mintButton.disabled = true;
     mintInput.disabled = true;
     return;
   }
-  const totalPriceWei = BigInt(info.deploymentConfig.mintPrice) * BigInt(mintInputValue);
+  const totalPriceWei = BigInt(info.runtimeConfig.mintPrice) * BigInt(mintInputValue);
   
   let priceType = '';
   if(chain === 'rinkeby' || chain === 'ethereum') {
@@ -306,7 +306,7 @@ async function mint() {
   mintButton.innerHTML = spinner;
 
   const amount = parseInt(document.getElementById("mintInput").value);
-  const value = BigInt(info.deploymentConfig.mintPrice) * BigInt(amount);
+  const value = BigInt(info.runtimeConfig.mintPrice) * BigInt(amount);
   const publicMintActive = await contract.methods.mintingActive().call();
   const presaleMintActive = await contract.methods.presaleActive().call();
 
