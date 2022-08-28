@@ -353,7 +353,8 @@ section {
 
 /* SPINNER */
 .dot-spinn {
-  width: 10%;
+  width: 70px;
+  height: auto;
 }
 
 
