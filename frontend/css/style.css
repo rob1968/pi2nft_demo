@@ -334,10 +334,10 @@ section {
 
 /* SPINNER */
 .dot-spin {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  transform: translate(-50%, -50%) scale(3);
+  position: fixed;
+  transform: translate(30px, 20px) rotate(20deg);
+  width: 140px;
+  height: 60px;
 }
 
 /* MEDIA QUERIES */
