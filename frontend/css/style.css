@@ -320,8 +320,7 @@ section {
   position: absolute;
   top: 50px;
   left: auto;
-  z-index: auto;
-}
+  }
 
 .splide__slide {
   border: var(--accent-color) solid;
@@ -329,7 +328,7 @@ section {
 }
 
 .splide__slide img {
-  width: 50%;
+  width: 1%;
 }
 
 /* SPINNER */
