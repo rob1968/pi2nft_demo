@@ -168,7 +168,6 @@ async function loadInfo() {
 
   let startTime = "";
   if (publicMintActive) {
-    image.src = "images/slider/Pi2NFT_com.gif" alt="PiCoin";
     mainHeading.innerText = h1_public_mint;
     mainText.innerText = p_public_mint;
     actionButton.classList.add('hidden');
