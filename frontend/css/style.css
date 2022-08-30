@@ -42,7 +42,7 @@ body {
 }
 
 #containimage{
-  max-width: 750px;
+  max-width: 500px;
   overflow: hidden;
 }
 img{
