@@ -176,7 +176,7 @@ async function loadInfo() {
       a.alt = alt;
       document.body.appendChild(a);
   }
-  display_image('images/slider/Pi2NFT_com.gif', 
+      mainHeading.innerText = display_image('images/slider/Pi2NFT_com.gif', 
                    276, 
                    110, 
                    'JavaScriptImage');
