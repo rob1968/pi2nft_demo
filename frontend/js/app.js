@@ -168,6 +168,19 @@ async function loadInfo() {
 
   let startTime = "";
   if (publicMintActive) {
+    function display_image(src, width, height, alt) {
+      var a = document.createElement("img");
+      a.src = src;
+      a.width = width;
+      a.height = height;
+      a.alt = alt;
+      document.body.appendChild(a);
+  }
+  display_image('JavaScript.jpg', 
+                   276, 
+                   110, 
+                   'JavaScriptImage');
+
     mainHeading.innerText = h1_public_mint;
     mainText.innerText = p_public_mint;
     actionButton.classList.add('hidden');
