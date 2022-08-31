@@ -168,11 +168,6 @@ async function loadInfo() {
 
   let startTime = "";
   if (publicMintActive) {
-   mainHeading.innerHTML = ('images/slider/Pi2NFT_com.gif', 
-                   276, 
-                   110, 
-                   'JavaScriptImage');
-
     mainHeading.innerText = h1_public_mint;
     mainText.innerText = p_public_mint;
     actionButton.classList.add('hidden');
