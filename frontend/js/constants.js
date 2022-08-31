@@ -1,3 +1,5 @@
+import C1 from 'images/slider/Pi2NFT_com.gif';
+
 const contractAddress = "0xBD6f4f6fda28b315A5dFfD016E736772A60D0801"; // Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby, polygon, or ethereum
 
@@ -7,7 +9,7 @@ const welcome_p = ' The Global Cryptocurrency  <a href="https://picoin.com"  tar
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
-const h1_public_mint_img = "images/slider/Pi2NFT_com.gif";
+const h1_public_mint_img = [C1];
 const h2_presale_coming_soon = "Pre-Sale Minting Countdown";
 const h2_presale_mint = "Public Minting Countdown";
 const p_presale_coming_soon = "We are working hard to launch the NFT Collection. Stay tuned for updates!";
