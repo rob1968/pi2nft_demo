@@ -227,6 +227,15 @@ section {
   text-align: center;
 }
 
+/* SPINNER */
+.dot-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3);
+}
+
+
 .countdown h2 {
   margin-top: 1rem;
 }
