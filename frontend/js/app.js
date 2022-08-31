@@ -169,7 +169,6 @@ async function loadInfo() {
   let startTime = "";
   if (publicMintActive) {
     mainHeading.innerText = h1_public_mint;
-    subHeading.innerText = h1_public_mint1;
     mainText.innerText = p_public_mint;
     actionButton.classList.add('hidden');
     mintButton.innerText = button_public_mint;
@@ -207,9 +206,7 @@ async function loadInfo() {
     mainHeading.innerText = h1_presale_coming_soon;
     subHeading.innerText = h2_presale_coming_soon;
     mainText.innerText = p_presale_coming_soon;
-    actionButton.innerText = button_presale_coming_soon;
-    <div id="ff-compose"></div>
-<script async defer src="https://formfacade.com/include/106948062833499227225/form/1FAIpQLSfQrnVcEW5g2c45zBaRWCXKhmZ27zvzS-JlfYyVn_CuNanT7w/classic.js?div=ff-compose"></script>
+    actionButton.innerText = button_presale_coming_form;
   }
 
   const clockdiv = document.getElementById("countdown");
