@@ -169,7 +169,7 @@ async function loadInfo() {
   let startTime = "";
   if (publicMintActive) {
     mainHeading.innerText = h1_public_mint;
-    mainHeading.innerText = h1_public_mint1;
+    subHeading.innerText = h1_public_mint1;
     mainText.innerText = p_public_mint;
     actionButton.classList.add('hidden');
     mintButton.innerText = button_public_mint;
