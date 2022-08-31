@@ -168,15 +168,7 @@ async function loadInfo() {
 
   let startTime = "";
   if (publicMintActive) {
-    function display_image(src, width, height, alt) {
-      var a = document.createElement("img");
-      a.src = src;
-      a.width = width;
-      a.height = height;
-      a.alt = alt;
-      document.body.appendChild(a);
-  }
-      mainHeading.innerText = display_image('images/slider/Pi2NFT_com.gif', 
+   mainHeading.innerText = ('images/slider/Pi2NFT_com.gif', 
                    276, 
                    110, 
                    'JavaScriptImage');
