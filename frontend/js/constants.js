@@ -16,6 +16,7 @@ const p_presale_mint_not_whitelisted = "You are not whitelisted for the pre-sale
 const p_presale_mint_whitelisted = "You're on the whitelist for the pre-sale! 🎉";
 const p_presale_mint_already_minted = "You've already claimed your whitelist mint. Thank you! 🎉";
 const p_public_mint = "No whitelist needed. Public minting is now open! 🎉";
+const button_presale_coming_form = "https://formfacade.com/include/106948062833499227225/form/1FAIpQLSfQrnVcEW5g2c45zBaRWCXKhmZ27zvzS-JlfYyVn_CuNanT7w/classic.js?div=ff-compose";
 const button_presale_coming_soon = "Get on the Whitelist";
 const button_presale_mint_whitelisted = "Mint Your Special PiCoin NFT now!";
 const button_presale_mint_not_whitelisted = "Get on the Whitelist";
