@@ -208,6 +208,8 @@ async function loadInfo() {
     subHeading.innerText = h2_presale_coming_soon;
     mainText.innerText = p_presale_coming_soon;
     actionButton.innerText = button_presale_coming_soon;
+    <div id="ff-compose"></div>
+<script async defer src="https://formfacade.com/include/106948062833499227225/form/1FAIpQLSfQrnVcEW5g2c45zBaRWCXKhmZ27zvzS-JlfYyVn_CuNanT7w/classic.js?div=ff-compose"></script>
   }
 
   const clockdiv = document.getElementById("countdown");
