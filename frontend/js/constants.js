@@ -1,7 +1,7 @@
 
 
-const contractAddress = "0xBD6f4f6fda28b315A5dFfD016E736772A60D0801"; // Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby, polygon, or ethereum
+const contractAddress = "0x4Aa61dAb288Ba414a6E3747B56c3D1E4e8f3e0df"; // Replace with your own contract address
+const chain = 'GOERLI'; // rinkeby, polygon, or ethereum
 
 const welcome_h1 = "Welcome to the Pi2NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
